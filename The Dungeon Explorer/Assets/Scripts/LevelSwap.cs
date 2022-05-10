@@ -6,7 +6,7 @@ public class LevelSwap : MonoBehaviour
 {
     public string levelToLoad;
 
-    private void OnTriggerEnter(Collider otherCollider)
+    private void OnTriggerEnter2D(Collider2D otherCollider)
     {
         //Debug.Log("Object Hit the door");
 
