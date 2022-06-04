@@ -12,8 +12,11 @@ public class KeyScript : MonoBehaviour
     {
         // the door gets relocated to a diffirent position in the game and out of the players view.
         Door.transform.position += new Vector3(0, 7, 0);
+
+
+        Destroy(gameObject);
     }
 
-
+    
 
 }
