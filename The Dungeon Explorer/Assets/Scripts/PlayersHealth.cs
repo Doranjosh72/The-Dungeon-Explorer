@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PlayersHealth : MonoBehaviour
 {
     // This will be the starting health for the player
     // Public variable = shown in Unity editor and accessible from other scripts
     // int = whole numbers
     public int startingHealth;
-
+    public string GameOverScene;
 
     // This will be the player's current health
     // Private variable = NOT shown in Unity or accessible from other scripts
@@ -60,6 +60,12 @@ public class PlayersHealth : MonoBehaviour
 
         // This destorys the gameobject the script is attached to.
         Destroy(gameObject);
+
+
+        // this will load the game over screen
+
+        SceneManager.LoadScene("GameOverScene");
+    
     }
 
     // This simple function will let other scripts ask this one what the current health is

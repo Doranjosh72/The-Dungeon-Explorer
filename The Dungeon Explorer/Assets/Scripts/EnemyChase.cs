@@ -5,24 +5,22 @@ using UnityEngine;
 public class EnemyChase : MonoBehaviour
 {
 
-    
+
     public float forceStrength;     // How fast we move
     public Transform target;        // The thing you want to chase
 
 
-    
+
     private Rigidbody2D ourRigidbody;   // The rigidbody attached to this object
 
 
-   
+
     void Awake()
     {
         // Get the rigidbody that we'll be using for movement
         ourRigidbody = GetComponent<Rigidbody2D>();
     }
 
-
-   
     void Update()
     {
         // Move in the direction of our target
@@ -36,6 +34,15 @@ public class EnemyChase : MonoBehaviour
         ourRigidbody.AddForce(direction * forceStrength);
 
 
+    }
+
+    public void TakeDamage(float Damage)
+    {
+        if (gameObject != null)
+        {
+            // Do something  
+            Destroy(gameObject);
+        }
 
 
     }
