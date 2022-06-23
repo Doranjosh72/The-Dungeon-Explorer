@@ -8,8 +8,7 @@ public class ProjectileFiring : MonoBehaviour
     public GameObject projectilePrefab;
     public Vector2 projectileVelocity;
 
-    // KEYBOARD / GAMEPAD ONLY!
-    // CONDITION: When the player presses a key / button...
+    // this allows you to determine what key will be used for this function.
     void Update()
     {
         if (Input.GetKeyDown("l"))
@@ -18,24 +17,22 @@ public class ProjectileFiring : MonoBehaviour
         }
     }
 
-    // ACTION: Fire a projectile
+    // This is going to fire the projectile sprite.
     public void FireProjectile()
     {
-        // Clone the pojectile
-        // Declare a variable to hold the cloned object
+       
         GameObject clonedProjectile;
-        // Use Instantiate to clone the projectile and keep the result in our variable
+        
         clonedProjectile = Instantiate(projectilePrefab);
 
-        // Position the projectile on the player
-        clonedProjectile.transform.position = transform.position; // OPTIONAL: Add an offset (use a public variable)
+      
+        clonedProjectile.transform.position = transform.position; 
 
-        // Fire it in a direction
-        // Declare a vairable to hold the cloned object's rigidbody
+        
         Rigidbody2D projectileRigidbody;
-        // Get the rigidbody from our cloned projectile and store it
+        
         projectileRigidbody = clonedProjectile.GetComponent<Rigidbody2D>();
-        // Set the velocity on the rigidbody to the editor setting
+       
         projectileRigidbody.velocity = projectileVelocity;
 
       

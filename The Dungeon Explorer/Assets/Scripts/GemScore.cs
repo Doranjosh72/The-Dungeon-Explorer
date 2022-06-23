@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class GemScore : MonoBehaviour
 {
-    // these are public variables.
+    // public varibles
     public Text ScoreDisplay;
     public bool shouldReset = false;
     public int winningScore;
     public string winningScene;
-    // this is a private variable.
+    // private varibles.
     private static int scoreValue = 0;
 
     // This is called by unity the frame after this object is created.
@@ -27,22 +27,22 @@ public class GemScore : MonoBehaviour
 
 
 
-    // this functions adds the players score
+    // this adds the player score
     // this is not automatticly added by unity - we need to call it ourselfs in our code.
     public void AddScore(int toAdd)
     {
-        // this updates the numerical value of the score. (this is the first action)
+        // this will update the numerical value of the score. (this is the first action)
         scoreValue = scoreValue + toAdd;
 
-        // this updates the display score based on the numerical value
+        // this will update the display score based on the numerical value
 
         ScoreDisplay.text = scoreValue.ToString();
 
-        //check if score is bigger than our win score
+        //this will check if the score is bigger than our win score
 
         if (scoreValue >= winningScore)
         {
-            // our score is a winning score which will load the winning scene.
+            // this will load a winning scene when you collect enough score
             SceneManager.LoadScene(winningScene);
         }
 

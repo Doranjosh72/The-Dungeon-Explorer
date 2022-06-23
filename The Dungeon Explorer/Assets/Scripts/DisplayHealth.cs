@@ -4,33 +4,27 @@ using UnityEngine;
 using UnityEngine.UI;
 public class DisplayHealth : MonoBehaviour
 {
-    // This will be the Text component that displays the health value
-    // Text = variable is in the form of a Text component
+    // this will be used for displaying the health
     Text healthValueDisplay;
 
-    // This will be the PlayerHealth component that we can ask for information about the player's health
-    // PlayerHealth = variable is in the form of a PlayerHealth component (your script)
+    
     PlayersHealth player;
 
 
-    // Start is called before the first frame update
+    
     void Start()
     {
-        // Get a Text component from the game object this script is attached to
-        // Store the Text component in our healthValueDisplay variable
+        
         healthValueDisplay = GetComponent<Text>();
 
-        // Search the scene for the object with PlayerHealth script attached
-        // Store the PlayerHealth component from that object in our player variable
+       
         player = FindObjectOfType<PlayersHealth>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Get the current health value from the player using the GetHealth() function
-        // Change that number to text using ToString()
-        // On the health value display Text component, set the text to be the number we just got
+       
         healthValueDisplay.text = player.GetHealth().ToString();
     }
 }

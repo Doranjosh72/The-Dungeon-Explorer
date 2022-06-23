@@ -11,6 +11,8 @@ public class Spin : MonoBehaviour
     }
 
     // Update is called once per frame
+    
+    // this will rotate the object in the direction you want it too.
     void Update()
     {
         transform.Rotate(0f, 0.5f, 0f, Space.Self);

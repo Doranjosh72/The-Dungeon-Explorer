@@ -16,7 +16,7 @@ public class EnemyDamage : MonoBehaviour
     }
 
 
-    // ACTION: Destroy an object (enemy)
+    // this will remove the enemy from the game
     public void KillEnemy(GameObject enemy)
     {
         Destroy(enemy);

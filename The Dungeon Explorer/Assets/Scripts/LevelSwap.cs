@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 public class LevelSwap : MonoBehaviour
 {
     public string levelToLoad;
-    // coliding with the Door object
+    // this is the player coliding with the object
     private void OnTriggerEnter2D(Collider2D otherCollider)
     {
         
-        // the sprite with the tag "MainCharacter" can be the only one to interact with the object
+        // the only sprite with this tag can enter this object.
         if (otherCollider.tag == "MainCharacter")
         {
             // this will load the next level using the Scene Manager

@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.1/staging' branch; Version is '2021.1.9f1 (7a790e367ab3) revision 8026382'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 22000.675; Version 2009; 64bit' Language: 'en' Physical Memory: 6020 MB
+OS: 'Windows 10 Home; OS build 22000.739; Version 2009; 64bit' Language: 'en' Physical Memory: 6020 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -15,11 +15,11 @@ C:/Users/doran/Documents/GitHub/The-Dungeon-Explorer/The Dungeon Explorer
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56747
+64723
 Successfully changed project path to: C:/Users/doran/Documents/GitHub/The-Dungeon-Explorer/The Dungeon Explorer
 C:/Users/doran/Documents/GitHub/The-Dungeon-Explorer/The Dungeon Explorer
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 277.37 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 138.82 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.9f1 (7a790e367ab3)
 [Subsystems] Discovering subsystems at path D:/college work/Editor/Data/Resources/UnitySubsystems
@@ -35,5 +35,9 @@ Initialize mono
 Mono path[0] = 'D:/college work/Editor/Data/Managed'
 Mono path[1] = 'D:/college work/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/college work/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56944
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56320
 Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/college work/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/college work/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001422 seconds.
