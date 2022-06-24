@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
        // telling the game what direction the player should be walking towards
         movement.x = Input.GetAxisRaw("Horizontal");
        movement.y = Input.GetAxisRaw("Vertical");
+    
+    
     }
 
 
